@@ -1,0 +1,32 @@
+.container-stack{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.operations{
+  margin: 1px;
+}
+
+button, p{
+  margin:2px;
+}
+
+
+
+.reset-button{
+  margin-left: 15px;
+}
+
+
+
+.operations-list{
+  display: flex;
+  flex-direction: column;
+}

@@ -8,6 +8,7 @@ function App() {
       <p> <Link to="/simplelist" > simplelist </Link> </p>
       <p> <Link to="/growshrinkbutton" > GrowShrinkButton </Link> </p>
       <p> <Link to="/buggybuttons" > BuggyButtons </Link> </p>
+      <p> <Link to="/stackoperation" > StackOperation </Link> </p>
     </h1>
   </div>
 }

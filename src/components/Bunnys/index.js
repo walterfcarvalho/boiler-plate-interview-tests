@@ -1,21 +1,21 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
+
 
 const BUNNY =
   "https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
-
-  
-
-
-const BuggyButtons = () => {
+ const BuggyButtons = () => {
   const [openCount, setOpenCount] = useState(0);
   const IDs = [1, 2, 3, 4, 5];
-  const verb = openCount == 1 ? "is " : "are ";
-  const noun = openCount == 1 ? "bunny." : "bunnies.";
+  const verb = openCount === 1 ? "is " : "are ";
+  const noun = openCount === 1 ? "bunny." : "bunnies.";
 
 
   return (
     <>
+          <h1> <Link to = "/" > return to begin </Link></h1>
+      
       <div
         style={{
           display: "flex",
@@ -44,7 +44,7 @@ const BuggyButtons = () => {
 const BuggyButton = ({openCount, setOpenCount} ) => {
   const [isOpen, setIsOpen] = useState(false);
   return isOpen ? (
-    <img
+    <img alt="alt ;)"
       src={BUNNY}
       height={300}
       width={200}
@@ -68,4 +68,4 @@ const BuggyButton = ({openCount, setOpenCount} ) => {
 };
 
 
-export default BuggyButtons;
+export default  BuggyButtons;
