@@ -9,6 +9,7 @@ function App() {
       <p> <Link to="/growshrinkbutton" > GrowShrinkButton </Link> </p>
       <p> <Link to="/buggybuttons" > BuggyButtons </Link> </p>
       <p> <Link to="/stackoperation" > StackOperation </Link> </p>
+      <p> <Link to="/captcha" > Captcha </Link> </p>
     </h1>
   </div>
 }
