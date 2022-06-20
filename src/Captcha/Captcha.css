@@ -1,0 +1,15 @@
+.captcha-container{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+img{
+  height: 100px;
+  width: 100px;
+}
+
+p{
+  text-align: center;
+}
