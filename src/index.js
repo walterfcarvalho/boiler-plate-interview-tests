@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import { Routes, Route, unstable_HistoryRouter as HistoryRouter } from "react-router-dom"
+import { createBrowserHistory } from "history"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from './components/App'
+import SimpleList from './components/SimpleList'
+import GrowShrinkButton from './components/GrowShrinkButton'
+import BuggyButtons from './components/Bunnys'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+const history = createBrowserHistory({ window })
+
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <HistoryRouter history={history}>
+      <Routes>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        <Route path="/" element={<App />} >
+          <Route index element={<App />} />
+        </Route>
+
+        <Route path="/simplelist" element={<SimpleList />} > </Route>
+        
+        <Route path="/growshrinkbutton" element={<GrowShrinkButton />} > </Route>
+        
+        <Route path="/buggybuttons" element={<BuggyButtons />} > </Route>
+
+        <Route path="/timeline" element={<App />} >
+          <Route path=":login" element={<App />} />
+        </Route>
+
+      </Routes>
+    </HistoryRouter>
+  </React.StrictMode>
+)

@@ -1,0 +1,9 @@
+.itemlist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.itemlist-item{
+  margin:5px;
+}
