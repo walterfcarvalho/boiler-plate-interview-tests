@@ -11,6 +11,7 @@ import BuggyButtons from './components/Bunnys'
 import StackOperation from './components/StackOperation'
 import Captcha from './components/Captcha'
 import Formulario from './components/Formulario'
+import RenderRobots from './components/RenderRobots'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -35,6 +36,8 @@ root.render(
         <Route path="/captcha" element={<Captcha />} > </Route>
      
         <Route path="/formulario" element={<Formulario />} > </Route>
+        
+        <Route path="/renderrobot" element={<RenderRobots />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />

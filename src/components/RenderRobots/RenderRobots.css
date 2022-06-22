@@ -1,0 +1,14 @@
+robot-image {
+  height: 100px;
+  width: 100px;
+}
+
+
+
+.robos-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}

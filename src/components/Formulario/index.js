@@ -12,6 +12,7 @@ const Formulario = () => {
 
   console.log(watch())
 
+  
   return <div>
     <form onSubmit={handleSubmit(onSubmit)} >
 
