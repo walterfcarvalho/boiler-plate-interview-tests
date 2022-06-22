@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import icon from './../images/delete-16.ico'
+import icon from '../images/delete-16.ico'
 import { Link } from "react-router-dom"
 import './SimpleList.css'
 
@@ -44,7 +44,7 @@ const SimpleList = () => {
         id="newvalue"
       >
       </input>
-      <input type="submit" value="Login" />
+      <input type="submit" value="Add" />
     </form>
 
     {lista.map((item, index) => (

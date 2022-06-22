@@ -41,9 +41,6 @@ const Captcha = () => {
   return <div>
     <h1> <Link to="/" > return to begin </Link></h1>
 
-
-
-
     <div className='captcha-container'>
 
 

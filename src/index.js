@@ -9,7 +9,8 @@ import SimpleList from './components/SimpleList'
 import GrowShrinkButton from './components/GrowShrinkButton'
 import BuggyButtons from './components/Bunnys'
 import StackOperation from './components/StackOperation'
-import Captcha from './Captcha'
+import Captcha from './components/Captcha'
+import Formulario from './components/Formulario'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -32,6 +33,8 @@ root.render(
         <Route path="/stackoperation" element={<StackOperation />} > </Route>
       
         <Route path="/captcha" element={<Captcha />} > </Route>
+     
+        <Route path="/formulario" element={<Formulario />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />
