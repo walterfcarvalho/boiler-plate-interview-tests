@@ -12,6 +12,7 @@ import StackOperation from './components/StackOperation'
 import Captcha from './components/Captcha'
 import Formulario from './components/Formulario'
 import RenderRobots from './components/RenderRobots'
+import CssAnimation from './components/CssAnimation'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -38,6 +39,8 @@ root.render(
         <Route path="/formulario" element={<Formulario />} > </Route>
         
         <Route path="/renderrobot" element={<RenderRobots />} > </Route>
+        
+        <Route path="/cssanimation" element={<CssAnimation />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />

@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes falling {
+  0% {
+    /* transform: translate3d(0, -400px, 0); */
+  }
+  100% {
+    transform:
+      translate3d(0, 40%, 0)
+      rotateX(30deg)
+      rotateY(0deg)
+      rotateZ(60deg);
+  }
+}
+
+@keyframes laydown {
+  /* 0% {
+    transform:
+      translate3d(0, 40%, 0)
+      rotateX(30deg)
+      rotateY(0deg)
+      rotateZ(60deg);
+  } */
+  100% {
+    transform:
+      /* translate3d(0, 40%, 0)
+      rotateX(70deg)
+      rotateY(0deg) */
+      rotateZ(180deg);
+  }
+}
+
+#falling-card-parent {
+  height: 150px;
+  width: 100px;
+  margin: auto;
+  perspective: 1000px;
+}
+
+#falling-card {
+  height: 150px;
+  width: 100px;
+  background-color: black;
+  margin: auto;
+  /* transform: */
+    /* translate3d(0, 40%, 0) */
+    /* rotateX(70deg) */
+    /* rotateY(0deg) */
+    /* rotateZ(80deg); */
+  animation-name:
+    laydown, falling;
+  animation-duration:
+    2000ms, 1000ms;
+  animation-timing-function:
+    ease-in, ease-out;
+  animation-iteration-count:
+    1, 1;
+}
+
+@keyframes animation2 {
+  0% {
+    transform: rotateZ(-90deg)
+  }
+  /* 100% {
+    transform: rotateZ(45deg)
+  } */
+}
+
+.animation2{
+  animation-name: animation2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: rotateZ(90deg)
+  }
+}
+
+.animation1{
+  animation-name: animation1;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}

@@ -12,6 +12,7 @@ function App() {
       <p> <Link to="/simplelist" > 16 simplelist </Link> </p>
       <p> <Link to="/stackoperation" > 17 StackOperation </Link> </p>
       <p> <Link to="/form" > 17 Form validator </Link> </p>
+      <p> <Link to="/cssanimation" > css animation </Link> </p>
     </h1>
   </div>
 }
