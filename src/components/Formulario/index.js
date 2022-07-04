@@ -3,6 +3,7 @@
 
 import React from "react"
 import { useForm } from "react-hook-form"
+import './Formulario.css'
 
 const Formulario = () => {
 
@@ -12,8 +13,7 @@ const Formulario = () => {
 
   console.log(watch())
 
-  
-  return <div>
+  return <div className='formContainer'>
     <form onSubmit={handleSubmit(onSubmit)} >
 
       <p>
