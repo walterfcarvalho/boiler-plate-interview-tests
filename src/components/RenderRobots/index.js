@@ -54,7 +54,7 @@ const RenderRobots = () => {
       <p className="robots-p">Robots</p>
       <div className="robos-list">
         {robots.map((robot, idx) => (
-          <img key={idx} id={robot.id} className="robot-image" src={robot.url} onClick={removeItem} />
+          <img key={idx} id={robot.id} className="robot-image" src={robot.url} onClick={removeItem} alt={`Url do robot:${robot.url}`} />
         ))}
       </div>
     </div>

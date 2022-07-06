@@ -14,9 +14,9 @@ const GrowShrinkButton = () => {
  
     return () => {
       clearInterval(timer);
-      console.log("bye")
     };
-      function ajustSize() {
+    
+    function ajustSize() {
 
     if (isGrowing && hw.h < 300) {
       setHw({h: hw.h + 10, w: hw.w + 10})
@@ -31,17 +31,17 @@ const GrowShrinkButton = () => {
   }, [hw, isGrowing])
 
 
-  function ajustSize() {
+  // function ajustSize() {
 
-    if (isGrowing && hw.h < 300) {
-      setHw({h: hw.h + 10, w: hw.w + 10})
-    }  
+  //   if (isGrowing && hw.h < 300) {
+  //     setHw({h: hw.h + 10, w: hw.w + 10})
+  //   }  
     
-     if (!isGrowing && hw.h > 40) {
-       setHw({h: hw.h - 10, w: hw.w - 10})      
-     }
+  //    if (!isGrowing && hw.h > 40) {
+  //      setHw({h: hw.h - 10, w: hw.w - 10})      
+  //    }
 
-  }
+  // }
 
   return <div>
     <h1> <Link to = "/" > return to begin </Link></h1>

@@ -5,6 +5,7 @@ import './App.css'
 function App() {
   return <div>
     <h1>
+      <p> <Link to="/loginscreen" > 12 Login screen </Link> </p>
       <p> <Link to="/renderrobot" > 12 Render Robot </Link> </p>
       <p> <Link to="/growshrinkbutton" > 13 GrowShrinkButton </Link> </p>
       <p> <Link to="/captcha" >  14 Captcha  </Link> </p>
