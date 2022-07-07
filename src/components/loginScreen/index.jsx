@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import './loginscreen.css'
+import { Resume } from '../Resume'
 
 export const Box = styled.div`
 display: flex;
@@ -41,7 +42,7 @@ export const LoginScreen = () => {
   const onSubmit = data => { 
   
     if (data.login.length < 6 || data.password.length < 6) {
-      window.alert('login and password should have more than 6 characters')
+      window.alert('login and password should have more than 5 characters')
       return
     }
 
@@ -65,7 +66,10 @@ export const LoginScreen = () => {
   }
 
   return <div>
-    <h1> <Link to = "/" > return to begin </Link></h1>
+
+    <Resume infoName={"LoginScreen"}/>
+
+
     <Box>
       <Form onSubmit={handleSubmit(onSubmit)} >
         <h2>Login</h2>

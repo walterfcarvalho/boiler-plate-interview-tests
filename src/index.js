@@ -14,9 +14,11 @@ import Formulario from './components/Formulario'
 import RenderRobots from './components/RenderRobots'
 import CssAnimation from './components/CssAnimation'
 import LoginScreen from './components/loginScreen'
+import MergeSortPart1 from './components/MergeSortPart1'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
+
 
 root.render(
   <React.StrictMode>
@@ -44,6 +46,8 @@ root.render(
         <Route path="/cssanimation" element={<CssAnimation />} > </Route>
         
         <Route path="/loginscreen" element={<LoginScreen />} > </Route>
+        
+        <Route path="/mergesortpart1" element={<MergeSortPart1 />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />
