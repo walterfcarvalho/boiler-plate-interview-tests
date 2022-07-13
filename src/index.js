@@ -15,6 +15,7 @@ import RenderRobots from './components/RenderRobots'
 import CssAnimation from './components/CssAnimation'
 import LoginScreen from './components/loginScreen'
 import MergeSortPart1 from './components/MergeSortPart1'
+import FilterOnList  from './components/FilterOnList'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -48,6 +49,8 @@ root.render(
         <Route path="/loginscreen" element={<LoginScreen />} > </Route>
         
         <Route path="/mergesortpart1" element={<MergeSortPart1 />} > </Route>
+
+        <Route path="/filteronlist" element={<FilterOnList />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />

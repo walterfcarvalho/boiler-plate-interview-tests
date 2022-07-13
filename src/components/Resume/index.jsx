@@ -20,6 +20,11 @@ export const Resume = ({infoName}) => {
         <strong> Description: </strong> {infos[infoName].description || " "}
       </div>
 
+      <div className='line'>
+        <strong> github: </strong> 
+        <a href="https://github.com/walterfcarvalho/interview-tests" target='_blank'> https://github.com/walterfcarvalho/interview-tests </a> 
+      </div>
+
   </div>
 
 } 
