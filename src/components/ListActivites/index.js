@@ -58,6 +58,8 @@ const ListActivites = () => {
     ? 'http://www.boredapi.com/api/activity'
     : 'https://www.boredapi.com/api/activity'
 
+    console.log(url)
+
     fetch(url, {method:'GET'})
     .then(response => response.json())
     .then(data => setActivities([...activities, data]))
