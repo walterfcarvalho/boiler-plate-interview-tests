@@ -2,11 +2,11 @@ import {Link} from 'react-router-dom'
 import './Resume.css'
 import infos from '../../data-questions.json' 
 
-export const Resume = ({infoName}) => {
+export const Resume = ({infoName, HideLinkBack = false}) => {
 
   return <div className='header'>
       
-      < Link to="/"> Back to begin </Link>
+      { !HideLinkBack &&  <Link to="/"> Back to begin </Link>}
 
       <div className='line'>
         <strong> Title: </strong> {infos[infoName].title}
@@ -21,7 +21,7 @@ export const Resume = ({infoName}) => {
       </div>
 
       <div className='line'>
-        <strong> github: </strong> 
+        <strong> Github: </strong> 
         <a href="https://github.com/walterfcarvalho/interview-tests" target='_blank'> https://github.com/walterfcarvalho/interview-tests </a> 
       </div>
 

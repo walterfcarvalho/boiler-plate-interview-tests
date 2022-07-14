@@ -15,30 +15,24 @@ const Obj = styled.div`
   margin-left: 10px;
 `
 
-
 const ArbitrarilyJsObject = () => {
-
   return <>
     <Resume infoName={"ArbitrarilyJsObject"} ></Resume> 
     
     <TheComponent theData={jsonFile.data} />
   </>
-
 }
 
-
 const TheComponent = ({ theData }) => {
-
   return <>
     { 
       Object.keys(theData).map((item, index) => (
         typeof (theData[item]) === 'string'
-          ? <Item> <strong> &#123; {item}: </strong> {theData[item]} &#125; </Item>
-          : <Obj> &#123;  <strong>{item}: </strong> <TheComponent theData={theData[item] }  />  &#125; </Obj>
+          ? <Item> <strong> &#65371; {item}: </strong> {theData[item]} &#65373; </Item>
+          : <Obj> &#65371;  <strong>{item}: </strong> <TheComponent theData={theData[item] } /> &#65373; </Obj>
       )    
     )}
   </>
-
 }
 
 export default ArbitrarilyJsObject

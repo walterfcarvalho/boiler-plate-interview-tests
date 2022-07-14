@@ -18,6 +18,7 @@ import MergeSortPart1 from './components/MergeSortPart1'
 import FilterOnList  from './components/FilterOnList'
 import MultipleChoiceQuiz from './components/MultipleChoiceQuiz'
 import ArbitrarilyJsObject from './components/ArbitrarilyJsObject'
+import ListActivites from './components/ListActivites'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -54,6 +55,8 @@ root.render(
         <Route path="/filteronlist" element={<FilterOnList />} > </Route>
         
         <Route path="/multiplechoicequiz" element={<MultipleChoiceQuiz />} > </Route>
+        
+        <Route path="/listactivites" element={<ListActivites />} > </Route>
 
         <Route path="/arbitrarilyjsobject" element={<ArbitrarilyJsObject />} > </Route>
 
