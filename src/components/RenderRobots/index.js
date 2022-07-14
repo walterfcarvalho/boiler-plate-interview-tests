@@ -1,9 +1,6 @@
-
-// https://react-hook-form.com/get-started#Handleerrors
-
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
-import { Link } from 'react-router-dom'
+import { Resume } from '../Resume'
 import './RenderRobots.css'
 
 const RenderRobots = () => {
@@ -15,8 +12,9 @@ const RenderRobots = () => {
     let aux = [...robots]
     aux.push({ url: "https://robohash.org/".concat(data.name), id: data.name })
     setRobots(aux)
-    console.log(aux)
   }
+
+  watch()
 
   function removeItem(event) {
     let id = (event.target.id)
@@ -25,12 +23,11 @@ const RenderRobots = () => {
     aux = aux.filter((robo) => robo.id !== (id))
 
     setRobots(aux)
-
-    console.log(watch())
   }
 
   return <div>
-    <Link to={"/"}>go back</Link>
+    <Resume infoName={"RenderRobots"}/>
+
     <form onSubmit={handleSubmit(onSubmit)} >
 
       <p>

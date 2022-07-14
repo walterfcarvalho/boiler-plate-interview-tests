@@ -19,6 +19,18 @@
     "title": "Create and score a multiple choice quiz",
     "link": "https://medium.com/@justin.sherman/react-coding-interview-challenge-8-f852c6d19385",
     "description": "Receive an array of questions, receive the answer, and step tp next question after all, show total score"
+  },
+  
+  "RenderRobots": {
+    "title": "handle a list of robots",
+    "link": "https://medium.com/@justin.sherman/react-coding-interview-challenge-2-bb8909e2b4a0",
+    "description": ""
+  },
+  
+  "ArbitrarilyJsObject": {
+    "title": "arbitrarily nested JavaScript Object",
+    "link": "https://medium.com/@justin.sherman/react-coding-interview-challenge-1-4b19bce85b0a",
+    "description": "Write a functional component that accepts an arbitrarily nested object as a prop. Each key/property of the object is a word and its associated value is either (1) an object of the same format or (2) a definition string"
   }
 
 }
