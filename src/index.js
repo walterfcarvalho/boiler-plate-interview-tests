@@ -16,10 +16,10 @@ import CssAnimation from './components/CssAnimation'
 import LoginScreen from './components/loginScreen'
 import MergeSortPart1 from './components/MergeSortPart1'
 import FilterOnList  from './components/FilterOnList'
+import MultipleChoiceQuiz from './components/MultipleChoiceQuiz'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
-
 
 root.render(
   <React.StrictMode>
@@ -51,6 +51,8 @@ root.render(
         <Route path="/mergesortpart1" element={<MergeSortPart1 />} > </Route>
 
         <Route path="/filteronlist" element={<FilterOnList />} > </Route>
+        
+        <Route path="/multiplechoicequiz" element={<MultipleChoiceQuiz />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />

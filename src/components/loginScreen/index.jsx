@@ -21,7 +21,6 @@ padding: 10px;
   margin: 5px;
 }
 `
-
 export const Input = styled.input`
   margin:5px;
 `

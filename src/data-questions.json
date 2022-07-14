@@ -13,5 +13,12 @@
     "title": "A filter on a list ",
     "link": "https://medium.com/@justin.sherman/react-coding-interview-challenge-9-dc20873e0ce5",
     "description": "this component get a list os users from web. So show from that list only names match"
+  },
+  
+  "MultipleChoiceQuiz": {
+    "title": "Create and score a multiple choice quiz",
+    "link": "https://medium.com/@justin.sherman/react-coding-interview-challenge-8-f852c6d19385",
+    "description": "Receive an array of questions, receive the answer, and step tp next question after all, show total score"
   }
+
 }
