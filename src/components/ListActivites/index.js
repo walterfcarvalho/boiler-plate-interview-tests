@@ -53,15 +53,14 @@ const ListActivites = () => {
   const [activities, setActivities] = useState([])
 
   function generateActivity(){
+    let url = 
+    process.env.NODE_ENV === 'development'
+    ? 'http://www.boredapi.com/api/activity'
+    : 'https://www.boredapi.com/api/activity'
 
-    fetch('http://www.boredapi.com/api/activity', {method:'GET'})
+    fetch(url, {method:'GET'})
     .then(response => response.json())
-    .then(data => {
-      console.log(data)
-
-      setActivities([...activities, data])
-    })
-
+    .then(data => setActivities([...activities, data]))
   }
 
   return <>
