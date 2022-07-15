@@ -1,6 +1,7 @@
 import { Resume } from '../Resume'
 import { useState } from 'react'
 import styled from 'styled-components'
+import acts from './activities.json'
 
 const Head = styled.div`
   display:flex;
@@ -53,16 +54,27 @@ const ListActivites = () => {
   const [activities, setActivities] = useState([])
 
   function generateActivity(){
-    let url = 
-    process.env.NODE_ENV === 'development'
-    ? 'http://www.boredapi.com/api/activity'
-    : 'https://www.boredapi.com/api/activity'
+    // let url = 
+    // process.env.NODE_ENV === 'development'
+    // ? 'http://www.boredapi.com/api/activity'
+    // : 'https://www.boredapi.com/api/activity'
 
-    console.log(url)
+    // console.log(activities)
 
-    fetch(url, {method:'GET'})
-    .then(response => response.json())
-    .then(data => setActivities([...activities, data]))
+    // fetch(url, {method:'GET'})
+    // .then(response => response.json())
+    // .then(data => setActivities([...activities, data]))
+
+    /*
+      BoredAPI has problem with SSL that doesn't allow to get data using https. So I got some data and save on a JSON file
+      to use on this example. ;)
+    */
+
+    let idx  = Math.floor(Math.random() * acts.activities.length-1) + 1
+
+    console.log(acts.activities[idx])
+
+    setActivities([...activities, acts.activities[idx]])
   }
 
   return <>
@@ -73,7 +85,7 @@ const ListActivites = () => {
     </Head>
 
     {
-      activities.map( act => <div key={act.key} > <Activity  act={act}/> </div>   )
+      activities.map( (act, idx) => <div key={idx} > <Activity  act={act}/> </div>   )
     }
   </>
 }
