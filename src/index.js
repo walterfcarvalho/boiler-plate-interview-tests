@@ -20,6 +20,8 @@ import MultipleChoiceQuiz from './components/MultipleChoiceQuiz'
 import ArbitrarilyJsObject from './components/ArbitrarilyJsObject'
 import ListActivites from './components/ListActivites'
 import ExpadingLadder from './components/ExpandingLadder'
+import UseContext from './components/UseContext'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -62,6 +64,9 @@ root.render(
         <Route path="/arbitrarilyjsobject" element={<ArbitrarilyJsObject />} > </Route>
 
         <Route path="/expandingladder" element={<ExpadingLadder />} > </Route>
+
+
+        <Route path="/usecontext" element={<UseContext />} > </Route>
 
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />

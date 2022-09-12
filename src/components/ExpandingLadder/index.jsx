@@ -25,14 +25,14 @@ const ExpandingLadder = () => {
   const [ladder, setLadder] = useState(setQt)
 
   function setSize(id, size) {
-    let aux = ladder
-
-    ladder.map((part, idx) => {
-      if (part.id <= id) {
-        aux[idx].size = size
-      }
-    })
-    setLadder([...aux])
+  
+    setLadder(
+      ladder.map( part => 
+        part.id <= id
+          ? { id: part.id, size }
+          : part
+      )
+    )
   }
 
   function setQt() {
