@@ -1,5 +1,5 @@
 
-import React, { useContext, useEffect, useState } from "react"
+import React, { useState } from "react"
 import UserList from './UserList';
 import { Resume } from 'components/Resume';
 
@@ -13,8 +13,6 @@ function UseContext() {
     <UsersContext.Provider value={{ userState, setUserState }}>
 
       <Resume infoName={"userContext"}/>
-
-
       <UserList />
     </UsersContext.Provider>
   );

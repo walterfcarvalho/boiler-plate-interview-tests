@@ -21,7 +21,7 @@ import ArbitrarilyJsObject from './components/ArbitrarilyJsObject'
 import ListActivites from './components/ListActivites'
 import ExpadingLadder from './components/ExpandingLadder'
 import UseContext from './components/UseContext'
-
+import TicTacToe from './components/Tictactoe'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const history = createBrowserHistory({ window })
@@ -65,9 +65,10 @@ root.render(
 
         <Route path="/expandingladder" element={<ExpadingLadder />} > </Route>
 
+        <Route path="/tictactoe" element={<TicTacToe />} > </Route>
 
         <Route path="/usecontext" element={<UseContext />} > </Route>
-
+        
         <Route path="/timeline" element={<App />} >
           <Route path=":login" element={<App />} />
         </Route>

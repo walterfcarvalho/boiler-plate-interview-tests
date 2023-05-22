@@ -1,0 +1,8 @@
+.myLinks{
+  margin: 1em;
+  background-color: #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}

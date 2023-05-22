@@ -1,0 +1,25 @@
+body{
+  margin: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 80%;
+}
+
+.tictactoe-board{
+  display: flex;
+  width: 80%;
+  background-color:  #ccddaa;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.tictactoe-tiles{
+  display:flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;  
+}
